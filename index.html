@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raffle Submission</title>
+</head>
+
+<body>
+    <h1>Welcome to the Raffle Submission!</h1>
+
+    <form action="/submit" method="post">
+        <label for="user-email">Email:</label>
+        <input type="email" id="user-email" name="user-email" placeholder="Enter your email" required><br><br>
+
+
+        <label for="quantity">Quantity: How many raffle tickets would you like to buy? </label><br>
+        <input type="number" id="quantity" min="1" max="1000000000" placeholder="Enter a quantity" required><br><br>
+
+        <label for="date">Raffle Date</label>
+        <input type="date" id="date" name="raffle date" placeholder="Please select a date" aria-valuemin="2024-07-01" aria-valuemax="2024-07-31" required><br><br>
+
+        <label for="guage excitement">How excited are you for this raffle?!??</label>
+        <input type="range" id="guage excitement" name="guage excitement" placeholder="" aria-valuemin="0" aria-valuemax="100" step="10"><br><br>
+
+        <label for="raffle color">Choose the raffle ticket color:</label>
+        <input type="color" id="raffle color" name="raffle color" placeholder="Select a color" aria-value="#ff0000"><br><br>
+
+        <label for="programming_lanugage">Choose your favorite programming language</label>
+        <select name="programming_lanugage id="programming_lanugage" required>
+            <option value="Python">Python</option>
+            <option value="JavaScript">JavaScript</option>
+            <option value="PHP">PHP</option>
+            <option value="Java">Java</option>
+        </select><br><br>
+
+        <label for="proficiency">How proficient are you in this language?</label><br>
+
+        <input type="radio" id="beginner" name="proficiency" value="beginner">
+        <label for="beginner">Beginner</label>
+
+        <input type="radio" id="intermediate" name="proficiency" value="intermediate">
+        <label for="intermediate">Intermediate</label>
+
+        <input type="radio" id="advanced" name="proficiency" value="advanced">
+        <label for="advanced"> Advanced</label><br><br>
+
+        <label for="preferred">Select Preferred Development Platforms:</label><br>
+
+        <input type="checkbox" id="web" name="web" value="yes">
+        <label for="web">Web</label>
+        <input type="checkbox" id="mobile" name="mobile" value="yes">
+        <label for="mobile">Mobile</label>
+        <input type="checkbox" id="desktop" name="desktop" value="yes">
+        <label for="desktop">Desktop</label><br><br>
+
+        <button type="submit">Submit</button><br>
+    </form>
+    
+</body>
+</html>
